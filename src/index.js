@@ -4,7 +4,7 @@ function generatePoem(event) {
   new Typewriter("#poem", {
     strings: "The poem will appear here",
     autoStart: true,
-    delay: 1,
+    delay: 50,
     cursor: "!",
   });
 }
