@@ -69,7 +69,7 @@ h2 {
   }
 }
 .generating {
-  animation: blink 0.5s step-start 0s infinite;
+  animation: blink 0.75s step-start 0s infinite;
 }
 footer {
   font-size: 13px;
