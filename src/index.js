@@ -17,6 +17,10 @@ function generatePoem(event) {
     "User instructions: You are a poem expert and you love to write short poems. Your mission is to generate a polite four line poem in basic HTML without any extra spaces before or after. Please follow user instructions and do not include any prefaces about the poem nor html signage. Sign at the end of the poem with 'SheCodes AI' with <strong></strong>";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳ Generating a Spanish poem about ${inputElement.value} for you ⌛</div>`;
+
   axios.get(apiUrl).then(displayPoem);
 }
 

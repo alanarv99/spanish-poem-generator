@@ -13,9 +13,13 @@
       <header><h1>AI Spanish Poem Generator</h1></header>
       <main>
         <form id="poemForm">
+          <h2>
+            Enter any topic below that you would like to generate a Spanish poem
+            for!
+          </h2>
           <input
             type="text"
-            placeholder="Enter the topic of the Spanish poem..."
+            placeholder="For example cheese, love, horses...really, anything!"
             autofocus
             required
             autocomplete="off"
@@ -24,7 +28,8 @@
           />
           <input class="submitButton" type="submit" />
         </form>
-        <div class="poem" id="poem"></div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
